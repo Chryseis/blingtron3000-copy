@@ -1,0 +1,29 @@
+{
+  "name": "@blingtron3000/copy-files",
+  "version": "1.0.5",
+  "description": "copy files",
+  "bin": {
+    "blingtron-copy": "script/copy.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js",
+    "src/lib",
+    "bin",
+    "src/utils",
+    "src/plugins"
+  ],
+  "author": "allen",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "commander": "^7.2.0",
+    "gulp": "^4.0.2",
+    "progress-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
