@@ -1,4 +1,4 @@
-# blingtron3000-copy
+# @blingtron3000-copy
 
 ## Install
 
