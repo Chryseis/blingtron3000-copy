@@ -1,4 +1,4 @@
-const { watch } = require('gulp');
+const watch = require('gulp-watch');
 const { copyFile } = require('./copyFiles');
 const { log } = require('../utils/log');
 
@@ -12,6 +12,7 @@ function watchFiles(s, d) {
 
   watcher.on('change', path => {
     // todo
+    console.log('change', path);
   });
 
   watcher.on('add', path => {
@@ -25,6 +26,7 @@ function watchFiles(s, d) {
 
   watcher.on('unlink', path => {
     // todo
+    console.log('unlink', path);
   });
 }
 
