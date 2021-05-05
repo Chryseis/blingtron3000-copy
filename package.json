@@ -1,9 +1,9 @@
 {
   "name": "@blingtron3000/copy-files",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "copy files",
   "bin": {
-    "blingtron-copy": "script/copy.js"
+    "blingtron": "script/blingtron.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
     "commander": "^7.2.0",
     "gulp": "^4.0.2",
     "gulp-watch": "^5.0.1",
+    "node-windows": "^1.0.0-beta.5",
     "progress-stream": "^2.0.0"
   },
   "devDependencies": {

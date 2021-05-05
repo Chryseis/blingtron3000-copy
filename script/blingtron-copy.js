@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const pkg = require('../package.json');
 const { Command } = require('commander');
 const { watchFiles } = require('../src/lib/watchFiles');
 const { copyAllFiles } = require('../src/lib/copyFiles');
@@ -8,8 +7,8 @@ const { log } = require('../src/utils/log');
 const program = new Command();
 
 program
-  .version(pkg.version)
-  .usage('copy --source D://picture --dest D://picture-new')
+  .description('复制文件到对应文件夹')
+  .usage('blingtron copy --source <src> --dest <dest>')
   .option('-s,--source <value>', '复制的目录路径')
   .option('-d,--dest <value>', '复制到的目录路径');
 
