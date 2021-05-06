@@ -1,6 +1,6 @@
 {
   "name": "@blingtron3000/copy-files",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "copy files",
   "bin": {
     "blingtron": "script/blingtron.js"
@@ -8,13 +8,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": [
-    "index.js",
-    "src/lib",
-    "bin",
-    "src/utils",
-    "src/plugins"
-  ],
   "author": "allen",
   "license": "ISC",
   "dependencies": {
