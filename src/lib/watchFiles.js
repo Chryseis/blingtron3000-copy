@@ -12,7 +12,9 @@ function watchFiles(s, d) {
 
   watcher.on('change', path => {
     // todo
-    console.log('change', path);
+    copyFile(path, d, () => {
+      log.info(`正在复制，${path}`);
+    });
   });
 
   watcher.on('add', path => {
