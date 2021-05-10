@@ -11,24 +11,25 @@ function watchFiles(s, d) {
   let copyFilesCount = 0;
 
   watcher.on('change', path => {
-    // todo
+    log.info(`文件变更：${path}`);
     copyFile(path, d, () => {
       log.info(`正在复制，${path}`);
     });
   });
 
   watcher.on('add', path => {
-    log.info(`正在复制文件${path}到${d}目录下`);
+    log.info(`新文件：${path}`);
 
-    copyFile(path, d, () => {
-      copyFilesCount = copyFilesCount + 1;
-      log.info(`复制完成,已复制${copyFilesCount}个文件`);
-    });
+    setTimeout(() => {
+      copyFile(path, d, () => {
+        copyFilesCount = copyFilesCount + 1;
+        log.info(`复制完成,已复制${copyFilesCount}个文件`);
+      });
+    }, 3000);
   });
 
   watcher.on('unlink', path => {
-    // todo
-    console.log('unlink', path);
+    log.info(`文件移除：${path}`);
   });
 }
 
