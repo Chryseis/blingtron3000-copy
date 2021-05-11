@@ -25,7 +25,7 @@ function watchFiles(s, d) {
         copyFilesCount = copyFilesCount + 1;
         log.info(`复制完成,已复制${copyFilesCount}个文件`);
       });
-    }, 3000);
+    }, 200);
   });
 
   watcher.on('unlink', path => {
